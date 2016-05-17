@@ -5,17 +5,17 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--Root View Controller-->
+        <!--ViNote v1.0.1-->
         <scene sceneID="ECI-It-q0n">
             <objects>
-                <tableViewController id="G40-D8-EMI" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="70" sectionHeaderHeight="28" sectionFooterHeight="28" id="vhb-ut-h4d">
+                <tableViewController id="G40-D8-EMI" customClass="ViewController" customModule="TrainingApp1" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="70" sectionHeaderHeight="18" sectionFooterHeight="18" id="vhb-ut-h4d">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ListCell" rowHeight="70" id="qdU-FJ-1SK">
-                                <rect key="frame" x="0.0" y="92" width="320" height="70"/>
+                                <rect key="frame" x="0.0" y="113.5" width="320" height="70"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qdU-FJ-1SK" id="x3i-AH-Mzs">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="69.5"/>
@@ -45,7 +45,7 @@
                             <outlet property="delegate" destination="G40-D8-EMI" id="i7T-C4-d3u"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="rFN-Un-sfD"/>
+                    <navigationItem key="navigationItem" title="ViNote v1.0.1" id="rFN-Un-sfD"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </tableViewController>
@@ -53,10 +53,10 @@
             </objects>
             <point key="canvasLocation" x="424" y="459"/>
         </scene>
-        <!--View Controller-->
+        <!--Details View Controller-->
         <scene sceneID="BoW-Cr-AFz">
             <objects>
-                <viewController id="nzV-5l-Vw5" sceneMemberID="viewController">
+                <viewController id="nzV-5l-Vw5" customClass="DetailsViewController" customModule="TrainingApp1" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="83Q-Jl-k8U"/>
                         <viewControllerLayoutGuide type="bottom" id="mQz-Nq-Y68"/>
