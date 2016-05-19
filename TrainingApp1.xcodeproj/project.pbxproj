@@ -14,6 +14,13 @@
 		40E2B4381CE854CA0007E82F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40E2B4371CE854CA0007E82F /* Assets.xcassets */; };
 		40E2B43B1CE854CA0007E82F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40E2B4391CE854CA0007E82F /* LaunchScreen.storyboard */; };
 		40E2B4431CE972920007E82F /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E2B4421CE972910007E82F /* DetailsViewController.swift */; };
+		65AAEFDE1CED5C2E00953B66 /* garlicjr.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 65AAEFDD1CED5C2E00953B66 /* garlicjr.JPG */; };
+		65AAEFE01CED617700953B66 /* 7-vien-ngoc-rong-va-nhung-bai-hoc-tuoi-tho (6).jpg in Resources */ = {isa = PBXBuildFile; fileRef = 65AAEFDF1CED617700953B66 /* 7-vien-ngoc-rong-va-nhung-bai-hoc-tuoi-tho (6).jpg */; };
+		65AAEFE21CED618400953B66 /* Majin_Boo_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 65AAEFE11CED618400953B66 /* Majin_Boo_2.jpg */; };
+		65AAEFE41CED618D00953B66 /* 843775.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 65AAEFE31CED618D00953B66 /* 843775.jpg */; };
+		65AAEFE61CED619500953B66 /* majin-buu-1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 65AAEFE51CED619500953B66 /* majin-buu-1.jpg */; };
+		65AAEFE81CED641000953B66 /* dark_flowers_by_pianochick66.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 65AAEFE71CED641000953B66 /* dark_flowers_by_pianochick66.jpg */; };
+		65AAEFEA1CED641700953B66 /* dark-dark-grunge-dark-vintage-flowers-Favim.com-1904956.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 65AAEFE91CED641700953B66 /* dark-dark-grunge-dark-vintage-flowers-Favim.com-1904956.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +33,13 @@
 		40E2B43A1CE854CA0007E82F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		40E2B43C1CE854CA0007E82F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		40E2B4421CE972910007E82F /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		65AAEFDD1CED5C2E00953B66 /* garlicjr.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = garlicjr.JPG; path = ../../../../garlicjr.JPG; sourceTree = "<group>"; };
+		65AAEFDF1CED617700953B66 /* 7-vien-ngoc-rong-va-nhung-bai-hoc-tuoi-tho (6).jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "7-vien-ngoc-rong-va-nhung-bai-hoc-tuoi-tho (6).jpg"; path = "../../../../7-vien-ngoc-rong-va-nhung-bai-hoc-tuoi-tho (6).jpg"; sourceTree = "<group>"; };
+		65AAEFE11CED618400953B66 /* Majin_Boo_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Majin_Boo_2.jpg; path = ../../../../Majin_Boo_2.jpg; sourceTree = "<group>"; };
+		65AAEFE31CED618D00953B66 /* 843775.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 843775.jpg; path = ../../../../843775.jpg; sourceTree = "<group>"; };
+		65AAEFE51CED619500953B66 /* majin-buu-1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "majin-buu-1.jpg"; path = "../../../../majin-buu-1.jpg"; sourceTree = "<group>"; };
+		65AAEFE71CED641000953B66 /* dark_flowers_by_pianochick66.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = dark_flowers_by_pianochick66.jpg; path = ../../../../dark_flowers_by_pianochick66.jpg; sourceTree = "<group>"; };
+		65AAEFE91CED641700953B66 /* dark-dark-grunge-dark-vintage-flowers-Favim.com-1904956.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "dark-dark-grunge-dark-vintage-flowers-Favim.com-1904956.jpg"; path = "../../../../dark-dark-grunge-dark-vintage-flowers-Favim.com-1904956.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +76,13 @@
 				40E2B42F1CE854CA0007E82F /* ViewController.swift */,
 				40E2B4311CE854CA0007E82F /* Main.storyboard */,
 				40E2B4371CE854CA0007E82F /* Assets.xcassets */,
+				65AAEFE91CED641700953B66 /* dark-dark-grunge-dark-vintage-flowers-Favim.com-1904956.jpg */,
+				65AAEFE71CED641000953B66 /* dark_flowers_by_pianochick66.jpg */,
+				65AAEFE51CED619500953B66 /* majin-buu-1.jpg */,
+				65AAEFE31CED618D00953B66 /* 843775.jpg */,
+				65AAEFE11CED618400953B66 /* Majin_Boo_2.jpg */,
+				65AAEFDF1CED617700953B66 /* 7-vien-ngoc-rong-va-nhung-bai-hoc-tuoi-tho (6).jpg */,
+				65AAEFDD1CED5C2E00953B66 /* garlicjr.JPG */,
 				40E2B4391CE854CA0007E82F /* LaunchScreen.storyboard */,
 				40E2B43C1CE854CA0007E82F /* Info.plist */,
 				40E2B4341CE854CA0007E82F /* TrainingApp1.xcdatamodeld */,
@@ -129,8 +150,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				40E2B43B1CE854CA0007E82F /* LaunchScreen.storyboard in Resources */,
+				65AAEFE01CED617700953B66 /* 7-vien-ngoc-rong-va-nhung-bai-hoc-tuoi-tho (6).jpg in Resources */,
+				65AAEFE41CED618D00953B66 /* 843775.jpg in Resources */,
+				65AAEFDE1CED5C2E00953B66 /* garlicjr.JPG in Resources */,
+				65AAEFE61CED619500953B66 /* majin-buu-1.jpg in Resources */,
+				65AAEFE21CED618400953B66 /* Majin_Boo_2.jpg in Resources */,
 				40E2B4381CE854CA0007E82F /* Assets.xcassets in Resources */,
+				65AAEFEA1CED641700953B66 /* dark-dark-grunge-dark-vintage-flowers-Favim.com-1904956.jpg in Resources */,
 				40E2B4331CE854CA0007E82F /* Main.storyboard in Resources */,
+				65AAEFE81CED641000953B66 /* dark_flowers_by_pianochick66.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

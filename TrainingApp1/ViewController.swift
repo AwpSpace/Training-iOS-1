@@ -54,29 +54,51 @@ class ViewController: UITableViewController {
     
     // Example:
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return 1
+        return 2
     }
     
     // TODO: Add other delegate functions to show: 10 rows, each row with different text
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return notes.count;
+        if(section == 0){
+            return 1
+        }else{
+            return notes.count
+        }
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("ListCell", forIndexPath: indexPath)
         
-        // TODO: Set cell value here, for example:
-        let label = cell.viewWithTag(1) as! UILabel
-        // ... set other value to label
-        label.text = notes[indexPath.row] + String(indexPath.row)
-        return cell
+        if(indexPath.section == 0){
+            let infoCell = tableView.dequeueReusableCellWithIdentifier("InfoCell", forIndexPath: indexPath)
+            
+            let avatar = infoCell.viewWithTag(2) as! UIImageView
+            avatar.layer.cornerRadius = 39
+            avatar.layer.masksToBounds = true
+            return infoCell
+        }else{
+            let cell = tableView.dequeueReusableCellWithIdentifier("ListCell", forIndexPath: indexPath)
+            return cell
+        }
+    }
+    
+    override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        var w:CGFloat = (self.view.window?.frame.size.width)!
+        if(indexPath.section == 0){
+            return w/3 + 40
+        }
+        return w/3
+        
     }
     
     override func tableView(tableView: UITableView, willSelectRowAtIndexPath indexPath: NSIndexPath) -> NSIndexPath? {
         // TODO: set message to temporary value to pass through prepareForSegue function below
-        bundle = notes[indexPath.row]
-        print(String(indexPath.row) + bundle!)
+        if(indexPath.section == 0){
+            bundle = "Your Profile"
+        }else{
+            bundle = notes[indexPath.row]
+        }
+    
         return indexPath
     }
 
