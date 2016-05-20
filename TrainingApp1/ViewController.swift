@@ -73,7 +73,9 @@ class ViewController: UITableViewController {
             let infoCell = tableView.dequeueReusableCellWithIdentifier("InfoCell", forIndexPath: indexPath)
             
             let avatar = infoCell.viewWithTag(2) as! UIImageView
-            avatar.layer.cornerRadius = 39
+            
+            var w:CGFloat = (self.view.window?.frame.size.width)!
+            avatar.layer.cornerRadius = w/6-16
             avatar.layer.masksToBounds = true
             return infoCell
         }else{
