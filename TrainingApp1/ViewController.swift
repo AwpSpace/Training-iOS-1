@@ -17,6 +17,22 @@ class ViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        var myString:String?
+        
+        myString = "Hello, Swift!"
+        
+        if myString != nil {
+            print(myString)
+        }else {
+            print("myString has nil value")
+        }
+        
+        if myString != nil {
+            print(myString!)
+        }else {
+            print("myString has nil value")
+        }
+        
         notes = ["Sáng mai 7h Đô gọi Điệp dậy đi ăn sáng!",
             "21h gặp khách hàng",
             "14 đưa chó đi ị",
