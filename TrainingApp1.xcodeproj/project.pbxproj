@@ -14,6 +14,8 @@
 		40E2B4381CE854CA0007E82F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40E2B4371CE854CA0007E82F /* Assets.xcassets */; };
 		40E2B43B1CE854CA0007E82F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40E2B4391CE854CA0007E82F /* LaunchScreen.storyboard */; };
 		40E2B4431CE972920007E82F /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E2B4421CE972910007E82F /* DetailsViewController.swift */; };
+		7992271F1CF4B9ED00587725 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7992271E1CF4B9ED00587725 /* Model.swift */; };
+		799227221CF4BA3800587725 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799227211CF4BA3800587725 /* ModelData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		40E2B43A1CE854CA0007E82F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		40E2B43C1CE854CA0007E82F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		40E2B4421CE972910007E82F /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		7992271E1CF4B9ED00587725 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Model.swift; path = TrainingApp1/Model.swift; sourceTree = SOURCE_ROOT; };
+		799227211CF4BA3800587725 /* ModelData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +62,26 @@
 		40E2B42C1CE854CA0007E82F /* TrainingApp1 */ = {
 			isa = PBXGroup;
 			children = (
+				799227201CF4BA1C00587725 /* Model */,
 				40E2B42D1CE854CA0007E82F /* AppDelegate.swift */,
-				40E2B42F1CE854CA0007E82F /* ViewController.swift */,
 				40E2B4311CE854CA0007E82F /* Main.storyboard */,
 				40E2B4371CE854CA0007E82F /* Assets.xcassets */,
 				40E2B4391CE854CA0007E82F /* LaunchScreen.storyboard */,
 				40E2B43C1CE854CA0007E82F /* Info.plist */,
 				40E2B4341CE854CA0007E82F /* TrainingApp1.xcdatamodeld */,
 				40E2B4421CE972910007E82F /* DetailsViewController.swift */,
+				40E2B42F1CE854CA0007E82F /* ViewController.swift */,
 			);
 			path = TrainingApp1;
+			sourceTree = "<group>";
+		};
+		799227201CF4BA1C00587725 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7992271E1CF4B9ED00587725 /* Model.swift */,
+				799227211CF4BA3800587725 /* ModelData.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -102,6 +116,7 @@
 				TargetAttributes = {
 					40E2B4291CE854CA0007E82F = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = G97F3K8V6M;
 					};
 				};
 			};
@@ -143,8 +158,10 @@
 			files = (
 				40E2B4301CE854CA0007E82F /* ViewController.swift in Sources */,
 				40E2B4361CE854CA0007E82F /* TrainingApp1.xcdatamodeld in Sources */,
+				7992271F1CF4B9ED00587725 /* Model.swift in Sources */,
 				40E2B42E1CE854CA0007E82F /* AppDelegate.swift in Sources */,
 				40E2B4431CE972920007E82F /* DetailsViewController.swift in Sources */,
+				799227221CF4BA3800587725 /* ModelData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,11 +274,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = TrainingApp1/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.awpspace.training.TrainingApp1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -270,11 +290,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = TrainingApp1/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.awpspace.training.TrainingApp1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
