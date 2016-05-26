@@ -8,11 +8,11 @@
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
-        <!--ViNote v1.0.1-->
+        <!--giolaoit-->
         <scene sceneID="ECI-It-q0n">
             <objects>
-                <tableViewController id="G40-D8-EMI" customClass="ViewController" customModule="TrainingApp1" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="70" sectionHeaderHeight="18" sectionFooterHeight="18" id="vhb-ut-h4d">
+                <tableViewController id="G40-D8-EMI" customClass="ProfileTableViewController" customModule="TrainingApp1" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="70" sectionHeaderHeight="1" sectionFooterHeight="1" id="vhb-ut-h4d">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -180,9 +180,6 @@
                                         <constraint firstItem="a27-UA-4CQ" firstAttribute="leading" secondItem="4mR-lc-Hdf" secondAttribute="trailing" constant="2" id="yg9-QA-TEu"/>
                                     </constraints>
                                 </tableViewCellContentView>
-                                <connections>
-                                    <segue destination="nzV-5l-Vw5" kind="show" identifier="showDetailsMessage" id="Cfc-MK-Y7q"/>
-                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -190,32 +187,62 @@
                             <outlet property="delegate" destination="G40-D8-EMI" id="i7T-C4-d3u"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="ViNote v1.0.1" id="rFN-Un-sfD"/>
+                    <navigationItem key="navigationItem" title="giolaoit" id="rFN-Un-sfD"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RGf-e5-9QA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="424" y="459"/>
+            <point key="canvasLocation" x="1394" y="4199"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="tSs-ym-pVL">
+        <!--Search Collection View Controller-->
+        <scene sceneID="KSS-D3-0fS">
             <objects>
-                <viewController id="Avh-6q-phE" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="zfj-3b-Clj"/>
-                        <viewControllerLayoutGuide type="bottom" id="nFM-u4-axg"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="6f6-Ue-vKp">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                <collectionViewController id="u9s-jK-puA" customClass="SearchCollectionViewController" customModule="TrainingApp1" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="lk7-Yr-DrA">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="vJd-NW-A8s"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Unj-K0-GIQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Mby-d1-193">
+                            <size key="itemSize" width="111" height="117"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="collectionCell" id="S8y-uE-efd">
+                                <rect key="frame" x="0.0" y="64" width="111" height="117"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="111" height="117"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="pinguinii-madagascar" translatesAutoresizingMaskIntoConstraints="NO" id="rub-Uf-CEN">
+                                            <rect key="frame" x="18" y="24" width="73" height="63"/>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <color key="backgroundColor" red="0.33473822790000002" green="0.4709789526" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="rub-Uf-CEN" secondAttribute="trailing" id="cpU-Ml-LJj"/>
+                                    <constraint firstItem="rub-Uf-CEN" firstAttribute="leading" secondItem="S8y-uE-efd" secondAttribute="leading" id="j71-3I-7Go"/>
+                                    <constraint firstAttribute="bottom" secondItem="rub-Uf-CEN" secondAttribute="bottom" id="m8j-Yr-Phd"/>
+                                    <constraint firstItem="rub-Uf-CEN" firstAttribute="top" secondItem="S8y-uE-efd" secondAttribute="top" id="nxV-fP-dPc"/>
+                                </constraints>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="u9s-jK-puA" id="dzr-tB-whY"/>
+                            <outlet property="delegate" destination="u9s-jK-puA" id="HBh-eq-aLj"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" id="Qtp-9n-N94"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="puq-61-Xvh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1513" y="2076"/>
+            <point key="canvasLocation" x="1513" y="2060"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="dxn-0t-J3Z">
@@ -255,26 +282,7 @@
             </objects>
             <point key="canvasLocation" x="1513" y="3498"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="EUF-cQ-890">
-            <objects>
-                <viewController id="Old-v2-x3K" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="sQ0-nw-5DE"/>
-                        <viewControllerLayoutGuide type="bottom" id="CIM-VT-iZg"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Sch-dk-p3i">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="HSO-oG-RX4"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="lSk-jl-ygb" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1513" y="4199"/>
-        </scene>
-        <!--Home Table View Controller-->
+        <!--Instagram-->
         <scene sceneID="fxK-X1-508">
             <objects>
                 <viewController id="vuv-oy-ghs" customClass="HomeTableViewController" customModule="TrainingApp1" customModuleProvider="target" sceneMemberID="viewController">
@@ -340,7 +348,7 @@
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gXh-SB-0Sg">
                                             <rect key="frame" x="18" y="18" width="284" height="40"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pinguinii-madagascar" translatesAutoresizingMaskIntoConstraints="NO" id="YPD-DV-VIi">
+                                                <imageView userInteractionEnabled="NO" tag="12" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pinguinii-madagascar" translatesAutoresizingMaskIntoConstraints="NO" id="YPD-DV-VIi">
                                                     <rect key="frame" x="8" y="0.0" width="40" height="40"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="40" id="1ee-j9-gaj"/>
@@ -385,7 +393,7 @@
                         </prototypes>
                         <sections/>
                     </tableView>
-                    <navigationItem key="navigationItem" id="ZL6-bq-iTl"/>
+                    <navigationItem key="navigationItem" title="Instagram" id="ZL6-bq-iTl"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PFX-wN-szI" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -434,24 +442,6 @@
             <point key="canvasLocation" x="1142" y="459"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="xZc-Nt-kE4">
-            <objects>
-                <navigationController id="UXR-Va-Qy2" sceneMemberID="viewController">
-                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="vas-5N-fQd">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="G40-D8-EMI" kind="relationship" relationship="rootViewController" id="c8i-vO-lV8"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="vce-hW-J6P" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-359" y="459"/>
-        </scene>
-        <!--Navigation Controller-->
         <scene sceneID="WSv-wi-hWT">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cSq-PK-YMz" sceneMemberID="viewController">
@@ -482,7 +472,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="Avh-6q-phE" kind="relationship" relationship="rootViewController" id="5eB-Dl-aDh"/>
+                        <segue destination="u9s-jK-puA" kind="relationship" relationship="rootViewController" id="auj-xZ-ETP"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LOE-ZX-E9i" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -539,7 +529,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="Old-v2-x3K" kind="relationship" relationship="rootViewController" id="EB8-p3-dUe"/>
+                        <segue destination="G40-D8-EMI" kind="relationship" relationship="rootViewController" id="q0o-gF-oX5"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AcD-VN-VRd" userLabel="First Responder" sceneMemberID="firstResponder"/>

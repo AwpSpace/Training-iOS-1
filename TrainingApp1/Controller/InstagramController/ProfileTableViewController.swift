@@ -1,14 +1,14 @@
 //
-//  HomeTableViewController.swift
+//  ProfileTableViewController.swift
 //  TrainingApp1
 //
-//  Created by Tuan Hai on 5/25/16.
+//  Created by Tuan Hai on 5/26/16.
 //  Copyright © 2016 AwpSpace. All rights reserved.
 //
 
 import UIKit
 
-class HomeTableViewController: UITableViewController {
+class ProfileTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,28 +27,47 @@ class HomeTableViewController: UITableViewController {
 
     // MARK: - Table view data source
 
+    // Example:
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 1
+        return 2
     }
-
+    
+    // TODO: Add other delegate functions to show: 10 rows, each row with different text
+    
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 30
+        if(section == 0){
+            return 1
+        }else{
+            return 30
+        }
     }
-
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("NewCell", forIndexPath: indexPath)
         
-        let avatar = cell.viewWithTag(12) as! UIImageView
-        avatar.layer.cornerRadius = 20
-        avatar.layer.masksToBounds = true
-
-        
-        return cell
+        if(indexPath.section == 0){
+            let infoCell = tableView.dequeueReusableCellWithIdentifier("InfoCell", forIndexPath: indexPath)
+            
+            let avatar = infoCell.viewWithTag(2) as! UIImageView
+            
+            var w:CGFloat = (self.view.window?.frame.size.width)!
+            avatar.layer.cornerRadius = w/6-16
+            avatar.layer.masksToBounds = true
+            return infoCell
+        }else{
+            let cell = tableView.dequeueReusableCellWithIdentifier("ListCell", forIndexPath: indexPath)
+            return cell
+        }
     }
     
+    override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        var w:CGFloat = (self.view.window?.frame.size.width)!
+        if(indexPath.section == 0){
+            return w/3 + 40
+        }
+        return w/3
+        
+    }
+
 
     /*
     // Override to support conditional editing of the table view.
@@ -85,7 +104,7 @@ class HomeTableViewController: UITableViewController {
     }
     */
 
-    
+    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -93,5 +112,6 @@ class HomeTableViewController: UITableViewController {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
     }
+    */
 
 }
