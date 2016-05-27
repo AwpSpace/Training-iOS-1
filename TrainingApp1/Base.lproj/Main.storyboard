@@ -263,24 +263,66 @@
             </objects>
             <point key="canvasLocation" x="1513" y="2786"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="zuU-gE-L10">
+        <!--Action Table View Controller-->
+        <scene sceneID="zbB-3i-SQg">
             <objects>
-                <viewController id="Fxa-TX-Q9e" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="XM2-lc-lLc"/>
-                        <viewControllerLayoutGuide type="bottom" id="86R-wV-pQ2"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="dU7-Yz-8fA">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                <tableViewController id="fO1-Lt-OvN" customClass="ActionTableViewController" customModule="TrainingApp1" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="95" sectionHeaderHeight="28" sectionFooterHeight="28" id="mwt-iR-vSH">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="fMf-DI-JTc"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ufY-pr-wWe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ActionCell" rowHeight="65" id="lyE-30-9V0">
+                                <rect key="frame" x="0.0" y="92" width="320" height="65"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lyE-30-9V0" id="ZlU-at-uop">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="64.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="pinguinii-madagascar" translatesAutoresizingMaskIntoConstraints="NO" id="14G-G6-SI3">
+                                            <rect key="frame" x="8" y="27.5" width="40" height="40"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="40" id="7SL-v6-Hij"/>
+                                                <constraint firstAttribute="height" constant="40" id="7zm-uZ-wOa"/>
+                                            </constraints>
+                                        </imageView>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="8b2f5d1e41854638fa24f43d70c0b575" translatesAutoresizingMaskIntoConstraints="NO" id="q9X-dC-WR4">
+                                            <rect key="frame" x="262" y="22.5" width="50" height="50"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="50" id="gU2-IS-DFh"/>
+                                                <constraint firstAttribute="width" constant="50" id="lVU-sx-Z9f"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="KyPhamKut3 đã thích ảnh của bạn" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6i4-Tf-oo4">
+                                            <rect key="frame" x="48" y="40.5" width="214" height="13.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="14G-G6-SI3" firstAttribute="leading" secondItem="ZlU-at-uop" secondAttribute="leadingMargin" id="E0n-u2-tt8"/>
+                                        <constraint firstItem="q9X-dC-WR4" firstAttribute="centerY" secondItem="ZlU-at-uop" secondAttribute="centerY" id="EuZ-ie-LZZ"/>
+                                        <constraint firstItem="q9X-dC-WR4" firstAttribute="trailing" secondItem="ZlU-at-uop" secondAttribute="trailingMargin" id="W9t-8i-yfa"/>
+                                        <constraint firstItem="14G-G6-SI3" firstAttribute="centerY" secondItem="ZlU-at-uop" secondAttribute="centerY" id="ejI-KJ-j2N"/>
+                                        <constraint firstItem="6i4-Tf-oo4" firstAttribute="leading" secondItem="14G-G6-SI3" secondAttribute="trailing" constant="4" id="f5t-sD-EaS"/>
+                                        <constraint firstItem="q9X-dC-WR4" firstAttribute="leading" secondItem="6i4-Tf-oo4" secondAttribute="trailing" id="ljl-zx-Y6h"/>
+                                        <constraint firstItem="6i4-Tf-oo4" firstAttribute="centerY" secondItem="ZlU-at-uop" secondAttribute="centerY" id="zfN-Vf-bKA"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="fO1-Lt-OvN" id="KSw-Ov-9Qw"/>
+                            <outlet property="delegate" destination="fO1-Lt-OvN" id="eTk-2G-jYJ"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="iao-el-sk0"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KMm-3b-XW7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1513" y="3498"/>
+            <point key="canvasLocation" x="1513" y="3488"/>
         </scene>
         <!--Instagram-->
         <scene sceneID="fxK-X1-508">
@@ -510,7 +552,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="Fxa-TX-Q9e" kind="relationship" relationship="rootViewController" id="uYx-4h-P61"/>
+                        <segue destination="fO1-Lt-OvN" kind="relationship" relationship="rootViewController" id="UgX-S9-p5A"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tQU-n6-9L6" userLabel="First Responder" sceneMemberID="firstResponder"/>
