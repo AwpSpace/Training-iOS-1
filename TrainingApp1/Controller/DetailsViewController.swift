@@ -10,17 +10,18 @@ import UIKit
 
 class DetailsViewController: UIViewController {
     
-    var message: String!=nil
+    var message: String?=nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
                 
-        if self.message!.isEmpty ?? true{
+        if self.message?.isEmpty ?? true{
             showDetails("empty message");
+            return;
         }
         
-        showDetails(self.message)
+        showDetails(self.message!)
         
         //print(self.message)
         
