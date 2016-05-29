@@ -49,6 +49,11 @@ class HomeTableViewController: UITableViewController {
         return cell
     }
     
+    override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        var w:CGFloat = (self.view.window?.frame.size.width)!
+        return w*2
+    }
+    
 
     /*
     // Override to support conditional editing of the table view.

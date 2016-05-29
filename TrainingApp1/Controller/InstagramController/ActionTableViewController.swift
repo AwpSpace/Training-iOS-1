@@ -49,6 +49,10 @@ class ActionTableViewController: UITableViewController {
         return cell
     }
     
+    override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return 60
+    }
+    
 
     /*
     // Override to support conditional editing of the table view.
