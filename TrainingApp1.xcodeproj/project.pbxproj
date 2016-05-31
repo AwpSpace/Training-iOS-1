@@ -16,7 +16,6 @@
 		79DC734A1CF5F8D300EE8B8C /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DC73481CF5F8D300EE8B8C /* DetailsViewController.swift */; };
 		79DC734B1CF5F8D300EE8B8C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DC73491CF5F8D300EE8B8C /* ViewController.swift */; };
 		79DC734D1CF5F90C00EE8B8C /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DC734C1CF5F90C00EE8B8C /* Model.swift */; };
-		79DC73501CF5FD5A00EE8B8C /* avatar.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 79DC734F1CF5FD5A00EE8B8C /* avatar.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,7 +30,6 @@
 		79DC73481CF5F8D300EE8B8C /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		79DC73491CF5F8D300EE8B8C /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		79DC734C1CF5F90C00EE8B8C /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
-		79DC734F1CF5FD5A00EE8B8C /* avatar.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = avatar.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +70,6 @@
 				40E2B4391CE854CA0007E82F /* LaunchScreen.storyboard */,
 				40E2B43C1CE854CA0007E82F /* Info.plist */,
 				40E2B4341CE854CA0007E82F /* TrainingApp1.xcdatamodeld */,
-				79DC734E1CF5FC4A00EE8B8C /* Assets */,
 			);
 			path = TrainingApp1;
 			sourceTree = "<group>";
@@ -93,14 +90,6 @@
 				79DC73491CF5F8D300EE8B8C /* ViewController.swift */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		79DC734E1CF5FC4A00EE8B8C /* Assets */ = {
-			isa = PBXGroup;
-			children = (
-				79DC734F1CF5FD5A00EE8B8C /* avatar.jpg */,
-			);
-			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,7 +151,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				79DC73501CF5FD5A00EE8B8C /* avatar.jpg in Resources */,
 				40E2B43B1CE854CA0007E82F /* LaunchScreen.storyboard in Resources */,
 				40E2B4381CE854CA0007E82F /* Assets.xcassets in Resources */,
 				40E2B4331CE854CA0007E82F /* Main.storyboard in Resources */,
