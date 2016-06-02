@@ -20,6 +20,8 @@
 		6514B9661CFD97C50066430A /* SearchCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6514B9621CFD97C50066430A /* SearchCollectionViewController.swift */; };
 		6514B96A1CFD97D30066430A /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6514B9681CFD97D30066430A /* DetailsViewController.swift */; };
 		6514B96B1CFD97D30066430A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6514B9691CFD97D30066430A /* ViewController.swift */; };
+		65ED5EAC1CFFDF0100F7A8CB /* FlickrPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65ED5EAB1CFFDF0100F7A8CB /* FlickrPhoto.swift */; };
+		65ED5EAE1CFFDF4200F7A8CB /* FlickrPhotos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65ED5EAD1CFFDF4200F7A8CB /* FlickrPhotos.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,8 @@
 		6514B9621CFD97C50066430A /* SearchCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchCollectionViewController.swift; sourceTree = "<group>"; };
 		6514B9681CFD97D30066430A /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		6514B9691CFD97D30066430A /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		65ED5EAB1CFFDF0100F7A8CB /* FlickrPhoto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FlickrPhoto.swift; path = Model/FlickrPhoto.swift; sourceTree = "<group>"; };
+		65ED5EAD1CFFDF4200F7A8CB /* FlickrPhotos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FlickrPhotos.swift; path = Model/FlickrPhotos.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +115,8 @@
 			isa = PBXGroup;
 			children = (
 				6514B9561CFD952F0066430A /* Action.swift */,
+				65ED5EAB1CFFDF0100F7A8CB /* FlickrPhoto.swift */,
+				65ED5EAD1CFFDF4200F7A8CB /* FlickrPhotos.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -292,12 +298,14 @@
 				40E2B4361CE854CA0007E82F /* TrainingApp1.xcdatamodeld in Sources */,
 				6514B96B1CFD97D30066430A /* ViewController.swift in Sources */,
 				6514B9661CFD97C50066430A /* SearchCollectionViewController.swift in Sources */,
+				65ED5EAC1CFFDF0100F7A8CB /* FlickrPhoto.swift in Sources */,
 				6514B9641CFD97C50066430A /* HomeTableViewController.swift in Sources */,
 				6514B9631CFD97C50066430A /* ActionTableViewController.swift in Sources */,
 				6514B9571CFD952F0066430A /* Action.swift in Sources */,
 				40E2B42E1CE854CA0007E82F /* AppDelegate.swift in Sources */,
 				6514B9651CFD97C50066430A /* ProfileTableViewController.swift in Sources */,
 				6514B96A1CFD97D30066430A /* DetailsViewController.swift in Sources */,
+				65ED5EAE1CFFDF4200F7A8CB /* FlickrPhotos.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

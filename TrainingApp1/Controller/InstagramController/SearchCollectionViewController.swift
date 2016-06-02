@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Alamofire
+import SwiftyJSON
 
 private let reuseIdentifier = "Cell"
 
@@ -21,7 +23,29 @@ class SearchCollectionViewController: UICollectionViewController, UICollectionVi
         // Register cell classes
         self.collectionView!.registerClass(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
 
+        print("SearchScree")
+        
         // Do any additional setup after loading the view.
+        let URL:String = "https://api.flickr.com/services/feeds/photos_public.gne?format=json&tags=love"
+        Alamofire.request(.GET, URL)
+            .responseString { response in
+                /*
+                print(response.request)  // original URL request
+                print(response.response) // URL response
+                print(response.data)     // server data
+                print(response.result)   // result of response serialization
+                */
+                var jsonString:String = response.result.value!
+                jsonString = jsonString.substringWithRange(Range<String.Index>(start: jsonString.startIndex.advancedBy(15), end: jsonString.endIndex.advancedBy(-1)))
+                
+                //print("KQ: "+jsonString)
+                
+                let json1 = JSON(jsonString)
+                print("JSON1: \(json1)")
+                
+                let title = json1["title"].stringValue
+                print("Title: "+title)
+        }
     }
 
     override func didReceiveMemoryWarning() {
