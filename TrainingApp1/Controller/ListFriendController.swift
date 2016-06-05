@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UITableViewController {
+class ListFriendController: UITableViewController {
 
     var modelDatas = ModelData().getDatas()
     var model : Model! = nil
