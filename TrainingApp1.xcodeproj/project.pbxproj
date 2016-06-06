@@ -13,6 +13,9 @@
 		40E2B4381CE854CA0007E82F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40E2B4371CE854CA0007E82F /* Assets.xcassets */; };
 		40E2B43B1CE854CA0007E82F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40E2B4391CE854CA0007E82F /* LaunchScreen.storyboard */; };
 		790FFDA11D041F4E00299E61 /* CellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790FFDA01D041F4E00299E61 /* CellView.swift */; };
+		79173A581D05D2BE00F640DB /* TakePhotoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79173A571D05D2BE00F640DB /* TakePhotoController.swift */; };
+		79173A5A1D05DB6E00F640DB /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79173A591D05DB6E00F640DB /* HomeController.swift */; };
+		79173A5C1D05DB8300F640DB /* BlockHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79173A5B1D05DB8300F640DB /* BlockHomeView.swift */; };
 		792E2586D9724D0B93631658 /* Pods_TrainingApp1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 835447A4A96E05A61AA6A991 /* Pods_TrainingApp1.framework */; };
 		799227221CF4BA3800587725 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799227211CF4BA3800587725 /* ModelData.swift */; };
 		79DC734A1CF5F8D300EE8B8C /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DC73481CF5F8D300EE8B8C /* DetailsViewController.swift */; };
@@ -30,6 +33,9 @@
 		40E2B43A1CE854CA0007E82F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		40E2B43C1CE854CA0007E82F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		790FFDA01D041F4E00299E61 /* CellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellView.swift; sourceTree = "<group>"; };
+		79173A571D05D2BE00F640DB /* TakePhotoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TakePhotoController.swift; sourceTree = "<group>"; };
+		79173A591D05DB6E00F640DB /* HomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		79173A5B1D05DB8300F640DB /* BlockHomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlockHomeView.swift; sourceTree = "<group>"; };
 		799227211CF4BA3800587725 /* ModelData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		79DC73481CF5F8D300EE8B8C /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		79DC73491CF5F8D300EE8B8C /* ListFriendController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListFriendController.swift; sourceTree = "<group>"; };
@@ -88,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				790FFDA01D041F4E00299E61 /* CellView.swift */,
+				79173A5B1D05DB8300F640DB /* BlockHomeView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -106,6 +113,8 @@
 			children = (
 				79DC73481CF5F8D300EE8B8C /* DetailsViewController.swift */,
 				79DC73491CF5F8D300EE8B8C /* ListFriendController.swift */,
+				79173A571D05D2BE00F640DB /* TakePhotoController.swift */,
+				79173A591D05DB6E00F640DB /* HomeController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -255,8 +264,11 @@
 				79DC734A1CF5F8D300EE8B8C /* DetailsViewController.swift in Sources */,
 				79DC734D1CF5F90C00EE8B8C /* Model.swift in Sources */,
 				79DC734B1CF5F8D300EE8B8C /* ListFriendController.swift in Sources */,
+				79173A5C1D05DB8300F640DB /* BlockHomeView.swift in Sources */,
+				79173A5A1D05DB6E00F640DB /* HomeController.swift in Sources */,
 				799227221CF4BA3800587725 /* ModelData.swift in Sources */,
 				790FFDA11D041F4E00299E61 /* CellView.swift in Sources */,
+				79173A581D05D2BE00F640DB /* TakePhotoController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

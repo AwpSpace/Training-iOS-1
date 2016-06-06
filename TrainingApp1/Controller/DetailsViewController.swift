@@ -12,6 +12,7 @@ import SwiftyJSON
 
 class DetailsViewController: UIViewController {
     
+    @IBOutlet weak var btnEditProfile: UIButton!
     @IBOutlet weak var collectionView: UICollectionView!
     
     var message: String?=nil
@@ -20,11 +21,11 @@ class DetailsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-                
-        if self.message?.isEmpty ?? true{
-            showDetails("empty message");
-            return;
-        }
+        print("loadprofile")
+//        if self.message?.isEmpty ?? true{
+//            showDetails("empty message");
+//            return;
+//        }
         
         //showDetails(self.message!)
         testGetRequest()
@@ -33,6 +34,24 @@ class DetailsViewController: UIViewController {
     }
     
 
+    @IBAction func btnEditProfileTouchDown(sender: AnyObject) {
+        if data.count == 0{
+            testGetRequest();
+        }
+        else{
+            let alertController = UIAlertController(title: "Data", message: "Data loaded", preferredStyle: .Alert)
+            
+            let okAction = UIAlertAction(title: "Ok", style: .Default) { (action) in
+                //print(action)
+            }
+            alertController.addAction(okAction)
+            
+            self.presentViewController(alertController, animated: true) {
+                
+            }
+
+        }
+    }
     func showDetails(message: String) {
         // TODO: - Show alert with title: App Name, message: parameter
         //print("show details")
@@ -57,16 +76,17 @@ class DetailsViewController: UIViewController {
         print(data.count)
         self.collectionView.dataSource = self;
         self.collectionView.delegate = self;
+     
     }
     
     func testGetRequest() {
-        Alamofire.request(.GET, "https://api.flickr.com/services/feeds/photos_public.gne?format=json&user_id=141261738&nojsoncallback=1", encoding: .JSON).responseJSON { (response) in
+        Alamofire.request(.GET, "https://api.flickr.com/services/feeds/photos_public.gne?format=json&user_id=141261738&nojsoncallback=1&_=", encoding: .JSON).responseJSON { (response) in
             print(response.result)
             if let content = response.result.value {
                 let json = JSON(content)
                 let items = json["items"]
                 for (index, item) : (String, JSON) in items{
-                    print(index)
+                    //print(index)
                     self.data.append(item["media"]["m"].stringValue)
                 }
                 self.reloadData();
@@ -113,9 +133,9 @@ class DetailsViewController: UIViewController {
         
         func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize
         {
-            // http://stackoverflow.com/questions/28872001/uicollectionview-cell-spacing-based-on-device-sceen-size
             
-            let length = (UIScreen.mainScreen().bounds.width-15)/2
+            
+            let length = (UIScreen.mainScreen().bounds.width-15)/4
             return CGSizeMake(length,length);
         }
     }
